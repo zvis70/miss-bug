@@ -39,6 +39,10 @@ app.get('/puki', (req, res) => {
 app.get('/', (req, res) => res.send('Hello there'))
 
 
+const port = process.env.PORT || 3032;
+app.listen(port, () => {
+console.log(`App listening on port ${port}!`)
+});
 
 
-app.listen(3032, () => console.log('Server ready at port 3032'))
+// app.listen(3032, () => console.log('Server ready at port 3032'))
