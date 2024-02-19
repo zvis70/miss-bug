@@ -44,27 +44,6 @@
     ]
   },
   {
-    "_id": "b8s1xGz",
-    "title": "33",
-    "description": "33",
-    "severity": 5,
-    "createdAt": 1707608714572,
-    "labels": [
-      "label1",
-      "label2"
-    ]
-  },
-  {
-    "_id": "bo2KGGG",
-    "title": "111",
-    "description": "1",
-    "severity": 1,
-    "createdAt": 1707695788244,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
     "_id": "berZJ1t",
     "title": "222",
     "description": "2",
@@ -85,63 +64,13 @@
     ]
   },
   {
-    "_id": "bPKXLec",
-    "title": "44",
-    "description": "4",
-    "severity": 4,
-    "createdAt": 1707695805628,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
-    "_id": "bjqz05q",
-    "title": "44",
-    "description": "4",
-    "severity": 4,
-    "createdAt": 1707695808810,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
-    "_id": "bYIlO98",
-    "title": "",
-    "description": "4",
-    "severity": 4,
-    "createdAt": 1707695810525,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
-    "_id": "bOBTp00",
-    "title": "4",
-    "description": "4",
-    "severity": 4,
-    "createdAt": 1707695811760,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
-    "_id": "bOJ6Ett",
-    "title": "4",
-    "description": "4",
-    "severity": 4,
-    "createdAt": 1707695813051,
-    "labels": [
-      "undefined"
-    ]
-  },
-  {
     "_id": "bVY8x93",
     "title": "window error",
     "description": "4",
     "severity": 4,
     "createdAt": 1707695814160,
     "labels": [
-      "undefined"
+      "win"
     ]
   },
   {
@@ -151,7 +80,7 @@
     "severity": 4,
     "createdAt": 1707695817079,
     "labels": [
-      "undefined"
+      "general"
     ]
   },
   {
@@ -161,7 +90,7 @@
     "severity": 0,
     "createdAt": 1707695819199,
     "labels": [
-      "undefined"
+      "good"
     ]
   },
   {
@@ -171,8 +100,8 @@
     "severity": 6,
     "createdAt": 1707698443225,
     "labels": [
-      "label1",
-      "label2"
+      "very bad",
+      "version 1.0"
     ]
   },
   {
@@ -183,7 +112,7 @@
     "createdAt": 1707765520804,
     "labels": [
       "label1",
-      "label2"
+      "version 4.0"
     ]
   },
   {
@@ -195,17 +124,6 @@
     "labels": [
       "black",
       "white"
-    ]
-  },
-  {
-    "title": "123",
-    "severity": 7,
-    "description": "456",
-    "_id": "HZy3C",
-    "createdAt": 1708124919190,
-    "labels": [
-      "bbb",
-      "aa"
     ]
   }
 ]

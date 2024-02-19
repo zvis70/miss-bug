@@ -39,7 +39,7 @@ export async function getBug(req, res) {
 
         const bug = await bugService.getById(bugId)
 
-        res.cookie('visitedBugs', visitedBugs, { maxAge: 7 * 1000, httpOnly: true });
+        res.cookie('visitedBugs', visitedBugs, { maxAge: 7 * 1000/* , httpOnly: true */ });
         res.send(bug)
 
     } catch (err) {

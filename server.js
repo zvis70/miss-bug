@@ -39,7 +39,7 @@ app.get('/puki', (req, res) => {
 app.get('/', (req, res) => res.send('Hello there'))
 
 
-const port = process.env.PORT || 3032;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
 console.log(`App listening on port ${port}!`)
 });
