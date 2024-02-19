@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "DYNJs",
+    "username": "muki",
+    "fullname": "Puki Ja",
+    "password": "123465",
+    "score": 100
+  },
+  {
+    "username": "tzvika",
+    "fullname": "Zvi Senderov",
+    "password": "Zz123",
+    "score": 800,
+    "_id": "788VH"
+  },
+  {
+    "username": "admin",
+    "fullname": "Admin Admin",
+    "password": "1000",
+    "score": 1000,
+    "_id": "a123"
+  },
+  {
+    "username": "supevisor",
+    "fullname": "Supervisor Supervisor",
+    "password": "s123",
+    "score": 999,
+    "_id": "APeEs"
+  }
+]
