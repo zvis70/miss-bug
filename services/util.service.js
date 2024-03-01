@@ -84,7 +84,7 @@ function dateTooltip(createdAtTimestamp, tooltipType) {
     var now = Date.now()
     console.log("now ", now ) 
 
-    // var tooltipDate = createdAtTimestamp//new Date(createdAtTimestamp)
+    var tooltipDate = createdAtTimestamp//new Date(createdAtTimestamp)
     var timeDifference = now - createdAtTimestamp
     
     if (tooltipType === "short") {
@@ -101,17 +101,17 @@ function dateTooltip(createdAtTimestamp, tooltipType) {
         var timeDifferenceTooltip
 
         if (years > 0) {
-            timeDifferenceTooltip = years + "y"
+            timeDifferenceTooltip = years + "years"
         } else if (months > 0) {
-            timeDifferenceTooltip = months + "mo"
+            timeDifferenceTooltip = months + "months"
         } else if (weeks > 0) {
-            timeDifferenceTooltip = weeks + "w"
+            timeDifferenceTooltip = weeks + "weeeks"
         } else if (days > 0) {
-            timeDifferenceTooltip = days + "d"
+            timeDifferenceTooltip = days + "days"
         } else if (hours > 0){
-            timeDifferenceTooltip = hours + "h"
+            timeDifferenceTooltip = hours + "hours"
         }else {
-            timeDifferenceTooltip = minutes + "m"
+            timeDifferenceTooltip = minutes + "minutes"
         }
 console.log("timeDifferenceTooltip", timeDifferenceTooltip)
         return (timeDifferenceTooltip)

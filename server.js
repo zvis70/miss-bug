@@ -1,8 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 
-//import { bugService } from './api/bug/bug.service.js'
-import { loggerService } from './services/logger.service.js'
 import cookieParser from 'cookie-parser'
 
 const app = express()
@@ -18,15 +16,22 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(cookieParser())
 
-
 import {bugRoutes} from './api/bug/bug.routes.js'
 import {userRoutes} from './api/user/user.routes.js'
-
+//import {authRoutes} from './api/auth/auth.routes.js'
+//import {msgRoutes} from './api/msg/msg.routes.js'
 
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
 
+//app.use('/api/auth', authRoutes)
+//app.use('/api/msg', msgRoutes)
 
+app.get('/**', (req, res) => {
+    res.sendFile(path.resolve + '/public/index.html')
+})
+// git reset --soft
+// da6dc815fcb99af4132f28fb0a8ecd53d1ed501a
 
 app.get('/puki', (req, res) => {
     let visitCount = +req.cookies.visitCount
@@ -38,14 +43,12 @@ app.get('/puki', (req, res) => {
 
 
 app.get('/', (req, res) => res.send('Hello there'))
-
 app.get('/test', (req, res) => res.send('Hello there'))
 
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
 console.log(`App listening on port ${port}!`)
-});
-
+})
 
 // app.listen(3032, () => console.log('Server ready at port 3032'))

@@ -71,8 +71,9 @@ export async function addBug(req, res) {
         severity: +severity,
         labels: [],
         createdAt: Date.now(),
-        formattedCreatedAt: utilService.formatedDataForDisplay(Date.now()),
-        // dateTooltip: utilService.dateTooltip(1709272955326, "short")
+        formattedCreatedAt: utilService.formatedDataForDisplay(Date.now())
+        // dateTooltip: utilService.dateTooltip((Date.now(), "short")
+        // dateTooltip: utilService.dateTooltip(Date.now(), "hebrew")
     }
     try {
         const savedBug = await bugService.save(bugToSave)
