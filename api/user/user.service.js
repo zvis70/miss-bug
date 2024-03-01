@@ -37,7 +37,8 @@ async function save(userToSave) {
             if (idx === -1) throw 'Bad Id'
             users.splice(idx, 1, userToSave)
         } else {
-            userToSave._id = utilService.makeId()
+            const type = "USER"
+            userToSave._id = utilService.makeId(type, 6)
             users.push(userToSave)
         }
         await _saveUsersToFile()

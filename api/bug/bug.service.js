@@ -1,5 +1,5 @@
 import fs from 'fs'
-
+import { utilService } from '../../services/util.service.js'
 import { loggerService } from '../../services/logger.service.js'
 
 export const bugService = {
@@ -37,15 +37,15 @@ async function query(filterBy) {
             // const labelArray = filterBy.labels.split(',')
             // bugsToFilter = bugsToFilter.filter(bug =>
             //     bug.labels.some(label => labelArray.includes(label)))
-            try{
+            try {
                 // const regExp = new RegExp(filterBy.labels, 'i')??????
-            bugsToFilter = bugsToFilter.filter(bug => bug.labels?.some(labels => filterBy.labels.includes(labels)))
-            }catch(err){
-                console.log("err",err)
+                bugsToFilter = bugsToFilter.filter(bug => bug.labels?.some(labels => filterBy.labels.includes(labels)))
+            } catch (err) {
+                console.log("err", err)
             }
 
 
-                    }
+        }
 
 
         if (filterBy.sortBy) {
@@ -124,7 +124,8 @@ async function save(bugToSave) {
             if (idx === -1) throw 'Bad Id'
             bugs.splice(idx, 1, bugToSave)
         } else {
-            bugToSave._id = _makeId()
+            const type = "BUG"
+            bugToSave._id = utilService.makeId(type,6)
             bugs.push(bugToSave)
         }
         _saveBugsToFile('./data/bug.json')
@@ -135,16 +136,21 @@ async function save(bugToSave) {
     return bugToSave
 }
 
-function _makeId(length = 6) {
-    var txt = ''
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+// function _makeId(type, length = 6) {
+//     var txt = ''
+//     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 
-    for (var i = 0; i < length; i++) {
-        txt += possible.charAt(Math.floor(Math.random() * possible.length))
-    }
-
-    return txt
-}
+//     for (var i = 0; i < length; i++) {
+//         txt += possible.charAt(Math.floor(Math.random() * possible.length))
+//     }
+//     if (type === 1) {
+//         var newTxt = 'B_' + txt
+//     }
+//     else {
+//         var newTxt = 'U_' + txt
+//     }
+//     return newTxt
+// }
 
 function _readJsonFile(path) {
     const str = fs.readFileSync(path, 'utf8')

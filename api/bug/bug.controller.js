@@ -1,4 +1,5 @@
 import { loggerService } from "../../services/logger.service.js"
+import { utilService } from "../../services/util.service.js"
 import { bugService } from "./bug.service.js"
 
 //List
@@ -62,15 +63,23 @@ export async function removeBug(req, res) {
 
 //Save
 export async function addBug(req, res) {
-    const { title, severity, description, createdAt } = req.body
-    const bugToSave = { title, description, severity: +severity, createdAt: +createdAt }
+    const { title, severity, description } = req.body
+    const bugToSave = {
+        _id: null,
+        title,
+        description,
+        severity: +severity,
+        labels: [],
+        createdAt: Date.now(),
+        formattedCreatedAt: utilService.formatedDataForDisplay(Date.now()),
+        // dateTooltip: utilService.dateTooltip(1709272955326, "short")
+    }
     try {
         const savedBug = await bugService.save(bugToSave)
         res.send(savedBug)
     } catch (err) {
         res.status(400).send(`couldn't save bug`)
     }
-
 }
 
 //Update

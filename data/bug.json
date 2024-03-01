@@ -87,11 +87,8 @@
     "_id": "bdO5zFC",
     "title": "cant see the text",
     "description": "",
-    "severity": 0,
-    "createdAt": 1707695819199,
-    "labels": [
-      "good"
-    ]
+    "severity": 5,
+    "createdAt": 1707695819199
   },
   {
     "_id": "bsd0QNX",
@@ -105,18 +102,7 @@
     ]
   },
   {
-    "_id": "b2sgHH1",
-    "title": "window is small",
-    "description": "General Error",
-    "severity": 0,
-    "createdAt": 1707765520804,
-    "labels": [
-      "label1",
-      "version 4.0"
-    ]
-  },
-  {
-    "_id": "byUF8bH",
+    "_id": "B_byUF8bH",
     "title": "window is small",
     "description": "222222",
     "severity": 2,
@@ -125,5 +111,77 @@
       "black",
       "white"
     ]
+  },
+  {
+    "_id": "B_c4jRPS",
+    "title": "NEW_BUG",
+    "description": "Bug description?",
+    "severity": 7,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_MZPtJy",
+    "title": "NEW_BUG1",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_GTkuRm",
+    "title": "NEW_BUG 2",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_F0D7gt",
+    "title": "NEW_BUG 3",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_C5NErl",
+    "title": "NEW_BUG 4",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_Ei9Ges",
+    "title": "NEW_BUG 5",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1707765506892
+  },
+  {
+    "_id": "B_590W2a",
+    "title": "NEW_BUG 7",
+    "description": "Bug description?",
+    "severity": 3,
+    "labels": [],
+    "createdAt": 1709240844758
+  },
+  {
+    "_id": "B_rCDsJ7",
+    "title": "NEW_BUG 8",
+    "description": "Bug description?",
+    "severity": 6,
+    "labels": [],
+    "createdAt": 1709240938033
+  },
+  {
+    "_id": "B_1NLwwc",
+    "title": "NEW_BUG 89",
+    "description": "Bug description?",
+    "severity": 6,
+    "labels": [],
+    "createdAt": 1709243209529
   }
 ]

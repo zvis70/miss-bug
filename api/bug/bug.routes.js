@@ -5,6 +5,7 @@ import { addBug, getBug, getBugs, removeBug, updateBug } from "./bug.controller.
 const router = express.Router()
 
 
+
 router.get('/', getBugs)
 router.get('/:bugId', getBug)
 router.delete('/:bugId', removeBug)

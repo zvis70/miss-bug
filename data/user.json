@@ -3,7 +3,7 @@
     "_id": "DYNJs",
     "username": "muki",
     "fullname": "Puki Ja",
-    "password": "123465",
+    "password": "g456",
     "score": 100
   },
   {
@@ -26,5 +26,12 @@
     "password": "s123",
     "score": 999,
     "_id": "APeEs"
+  },
+  {
+    "username": "test_1",
+    "fullname": "User Test",
+    "password": "test123",
+    "score": 1,
+    "_id": "letD7"
   }
 ]
